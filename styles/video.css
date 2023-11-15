@@ -1,0 +1,140 @@
+.thumbnail {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-info {
+    padding-left: 10px;
+}
+.profile-picture {
+    border-radius: 18px;
+    width: 36px;
+}
+.tooltip-channel {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.15s;
+    top: 10px;
+    z-index: 50;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.title {
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.subscribers {
+    font-size: 14px;
+    color: rgb(73, 73, 73);
+}
+.channel-picture {
+    display: inline-block;
+    height: 37px;
+    width: 37px;
+    cursor: pointer;
+}
+.channel-picture:hover .tooltip-channel {
+    opacity: 1;
+}
+.tooltip-channel img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-stats,
+.video-author {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+.video-author {
+    margin-bottom: 6px;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .video-title {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .video-title {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200.1px) {
+    body {
+        padding-left: 220px;
+    }
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .video-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .sidebar {
+        width: 200px;
+    }
+    .sidebar-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-left: 10px;
+    }
+    .sidebar-link img {
+        margin-right: 10px;
+    }
+    .sidebar-link div {
+        font-size: 13px;
+    }
+}
+
+.video-time {
+    background-color: black;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+}
